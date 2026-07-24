@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cognitive Safety Navigator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Cognitive Safety Navigator</h1>
+    <p>A simple safety case management prototype.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Add a Case</h2>
+
+      <label>Case Title</label>
+      <input type="text" id="caseTitle" placeholder="Example: Housing contract issue">
+
+      <label>Category</label>
+      <select id="category">
+        <option>Mental Health</option>
+        <option>Housing</option>
+        <option>School Issue</option>
+        <option>Immigration</option>
+        <option>Online Scam</option>
+        <option>Discrimination</option>
+        <option>Emergency</option>
+      </select>
+
+      <label>Risk Level</label>
+      <select id="riskLevel">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+        <option>Emergency</option>
+      </select>
+
+      <label>Description</label>
+      <textarea id="description" placeholder="Write a short description."></textarea>
+
+      <button onclick="addCase()">Add Case</button>
+    </section>
+
+    <section class="card">
+      <h2>Case List</h2>
+      <div id="caseList"></div>
+    </section>
+
+    <section class="card">
+      <h2>Resource Library</h2>
+      <ul>
+        <li>Mental Health: Contact a campus counseling center or crisis support line.</li>
+        <li>Housing: Save written communication and contact a tenant support office.</li>
+        <li>School Issue: Contact an academic advisor or professor.</li>
+        <li>Online Scam: Save screenshots and report the issue.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
